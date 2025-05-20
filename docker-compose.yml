@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  systemd-monitor:
+    build: .
+    ports:
+      - '5014:5000'
+    environment:
+      - FLASK_ENV=development
